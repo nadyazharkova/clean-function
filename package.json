@@ -2,7 +2,7 @@
   "name": "clean-function",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/lifesCheck.js",
+  "main": "src/lifesCheck.js",
   "scripts": {
     "build": "webpack --mode production",
     "test": "jest --coverage",
