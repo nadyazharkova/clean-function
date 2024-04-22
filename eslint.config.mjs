@@ -1,6 +1,7 @@
 import globals from 'globals';
 import pluginJs from '@eslint/js';
 import stylisticJs from '@stylistic/eslint-plugin-js';
+import jest from 'eslint-plugin-jest';
 
 export default [
     pluginJs.configs.recommended,
@@ -12,9 +13,19 @@ export default [
     {
         // определение стандарта и парсинга
         languageOptions: {
-            ecmaVersion: 2023,
-            sourceType: 'module',
-            globals: globals.browser,
+        ecmaVersion: 2023,
+        sourceType: 'module',
+        globals: {
+            ...globals.browser, ...globals.node
+        },
+    },
+    },
+    {
+        files: [ '**/*.test.js' ],
+        ...jest.configs['flat/recommended'],
+        rules: {
+            ...jest.configs['flat/recommended'].rules,
+            'jest/prefer-expect-assertions': 'off',
         },
     },
     {
