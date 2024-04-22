@@ -135,6 +135,7 @@ dist
 ### Node Patch ###
 # Serverless Webpack directories
 .webpack/
+.webpack.config.json
 
 # Optional stylelint cache
 
