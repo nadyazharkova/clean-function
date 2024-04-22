@@ -11,7 +11,7 @@ test ('checkLifes more than 50', () => {
     expect(result).toBe('healthy');
 });
 
-test ('checkLifes more than 50', () => {
+test ('checkLifes less than 15 and more than 50', () => {
     const character = {
         name: 'Holly',
         health: 50
@@ -22,7 +22,7 @@ test ('checkLifes more than 50', () => {
     expect(result).toBe('wounded');
 });
 
-test ('checkLifes more than 50', () => {
+test ('checkLifes less than 15', () => {
     const character = {
         name: 'Nasty',
         health: 14
