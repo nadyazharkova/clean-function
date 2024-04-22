@@ -8,7 +8,7 @@ test ('checkLifes more than 50', () => {
 
     let result = checkLifes(character);
 
-    expect(result).toBe("healthy");
+    expect(result).toBe('healthy');
 });
 
 test ('checkLifes more than 50', () => {

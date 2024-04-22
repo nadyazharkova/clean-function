@@ -1,7 +1,7 @@
 export function checkLifes(characters) {
-    const healthy = "healthy";
-    const wounded = "wounded";
-    const critical = "critical";
+    const healthy = 'healthy';
+    const wounded = 'wounded';
+    const critical = 'critical';
 
     if (characters.health > 50) {
         return healthy;
